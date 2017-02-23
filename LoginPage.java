@@ -15,6 +15,7 @@ public class LoginPage {
 	By password = By.id("com.facebook.katana:id/login_password");
 	By enter = By.id("com.facebook.katana:id/login_login");
 	By location = By.id("com.android.packageinstaller:id/permission_allow_button");
+	By timeline = By.id("com.facebook.katana:id/news_feed_tab");
 	
 	public WebElement emailid(){
 		return driver.findElement(username);
@@ -30,5 +31,9 @@ public class LoginPage {
 	
 	public WebElement locate(){
 		return driver.findElement(location);
+	}
+	
+	public WebElement timeline(){
+		return driver.findElement(timeline);
 	}	
 }
